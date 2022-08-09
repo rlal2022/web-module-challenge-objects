@@ -16,13 +16,15 @@ The function should:
 */
 
 
-function createMenuItem(menu){
-const pancakes = {
-  name: 'Pancakes',
-  price: 7, 
-  category:"Breakfast"
+function createMenuItem(name, price, category){
+return {
+ name,
+ price,
+ category
+};
 }
-}
+
+console.log(createMenuIte( 'pancakes', 8, 'Brekfast'));
 
 
 
@@ -82,7 +84,7 @@ Using the reviews array above:
   1. log only Julius' feedback to the console - no function needed 
 */
 
-console.log(reviews.feedback[5]);
+console.log(reviews[5].feedback);
 
 
 
