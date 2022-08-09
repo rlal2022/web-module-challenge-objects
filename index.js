@@ -60,9 +60,21 @@ Using the burger object below do the following:
 const burger = {
   name: "Burger", 
   price: 18, 
-  category: "Lunch", 
+  category: "Lunch",
+  discount: function (customer) {
+    if(customer === 'teacher' || customer === 'student') {
+      return this.price * 0.75;
+
+    } else {
+      return this.price * 0.90;
+    }
+    }
+
+  }
   
-}
+  console.log(burger.discount('teacher'));
+  
+
 
 
 
@@ -138,9 +150,11 @@ Use the getReviewByIndex function below to do the following:
 */
 
 
-function getReviewByIndex(/*Your code here*/) {
-  /*Your code here*/
+function getReviewByIndex(array, num) {
+  return `${array[num].name} gave the restaurant a ${array[num].rating} star review, and their feedback was: ${array[num].feedback}`;
 }
+
+
 
   
 
