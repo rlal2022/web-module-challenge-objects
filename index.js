@@ -18,9 +18,7 @@ The function should:
 
 function createMenuItem(name, price, category){
 return {
- name,
- price,
- category
+ name,price,category
 };
 }
 
@@ -111,15 +109,25 @@ Use the addReview function below to do the following:
 */
 
 
-function addReview(newRev, num) {
-newRev[name][rating][feedback] = reviews;
-return newRev;
-
+function addReview(reviews, name, rating, feedback) {
+const myObj = { 
+  name: name,
+rating: rating,
+feedback: feedback
 
 
 }
+return reviews.push(myObj);
+}
 
-console.log(addReview(num,'Daniela', 5, 'Beautiful atmosphere and wonderful vegan options!'));
+console.log(addReview(reviews, 'Daniela', 5,'Beautiful atmosphere and wonderful vegan options!' ));
+
+
+
+// addReview(reviews, );
+
+
+// console.log(addReview(num,'Daniela', 5, 'Beautiful atmosphere and wonderful vegan options!'));
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
