@@ -24,7 +24,7 @@ return {
 };
 }
 
-console.log(createMenuIte( 'pancakes', 8, 'Brekfast'));
+console.log(createMenuItem( 'pancakes', 8, 'Breakfast'));
 
 
 
@@ -152,10 +152,13 @@ Use the getLastReview function below to do the following:
 */
 
 
-function getLastReview(/*Your code here*/) {
-  /*Your code here*/
+function getLastReview(array) {
+
+  let rev = reviews.pop();
+  return `${rev.name} gave the restuarant a ${rev.rating} star rview, and their feedback was: ${rev.feedback}`;
 } 
 
+console.log(getLastReview(reviews));
 
 
 ///////////////🍔☕️🍽 STRETCH🍔☕️🍽////////////////////
