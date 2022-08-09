@@ -42,7 +42,6 @@ Test your createMenuItems function by doing the following:
 
 */
 
-= {}
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
