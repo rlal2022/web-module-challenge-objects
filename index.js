@@ -40,7 +40,9 @@ Test your createMenuItems function by doing the following:
 
 */
 
-
+console.log(createMenuItem('burger', 12, 'Dinner')); 
+console.log(createMenuItem('fries', 5, 'Dinner')); 
+console.log(createMenuItem('shake', 3, 'Dinner')); 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 You're having a lunch special! 25% off for teachers and students, 10% off for everyone else. Add a method to the burger object below that automatically calculates price depending on the string received as a parameter. 
@@ -91,7 +93,7 @@ Reyna's feedback is missing! Use what you know to do the following: (no function
   2. log the reviews array to the console to check your work
 */
 
-reviews[7].feedback = "this place is chill with really cool people, great for getting work done on weekday";
+reviews[7].feedback = "this place is chill with really cool people, great for getting work done on weekdays";
 
 console.log(reviews);
 
@@ -117,17 +119,12 @@ feedback: feedback
 
 
 }
-return reviews.push(myObj);
+reviews.push(myObj);
+return reviews;
 }
 
 console.log(addReview(reviews, 'Daniela', 5,'Beautiful atmosphere and wonderful vegan options!' ));
 
-
-
-// addReview(reviews, );
-
-
-// console.log(addReview(num,'Daniela', 5, 'Beautiful atmosphere and wonderful vegan options!'));
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
@@ -162,8 +159,8 @@ Use the getLastReview function below to do the following:
 
 function getLastReview(array) {
 
-  let rev = reviews.pop();
-  return `${rev.name} gave the restuarant a ${rev.rating} star rview, and their feedback was: ${rev.feedback}`;
+  let rev = array.pop();
+  return `${rev.name} gave the restaurant a ${rev.rating} star review, and their feedback was: ${rev.feedback}`;
 } 
 
 console.log(getLastReview(reviews));
