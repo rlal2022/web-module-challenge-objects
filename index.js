@@ -94,7 +94,7 @@ Reyna's feedback is missing! Use what you know to do the following: (no function
   2. log the reviews array to the console to check your work
 */
 
-reviews.feedback[7] = "this place is chill with really cool people, great for getting work done on weekday";
+reviews[7].feedback = "this place is chill with really cool people, great for getting work done on weekday";
 
 console.log(reviews);
 
@@ -112,7 +112,7 @@ Use the addReview function below to do the following:
 */
 
 
-function addReview(newRev, name , rating, feedback) {
+function addReview(newRev, num) {
 newRev[name][rating][feedback] = reviews;
 return newRev;
 
@@ -120,7 +120,7 @@ return newRev;
 
 }
 
-console.log(addReview(newRev,'Daniela', 5, 'Beautiful atmosphere and wonderful vegan options!'));
+console.log(addReview(num,'Daniela', 5, 'Beautiful atmosphere and wonderful vegan options!'));
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
